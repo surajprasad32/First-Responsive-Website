@@ -1,0 +1,274 @@
+/* Making margin and padding zero by using universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Selecting body for background color and text color*/
+body{
+    background-color: #1A1A1D;
+    color: white;
+}
+
+/* Styling navigation bar */
+
+.navigation-bar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    /* background-color: black; */
+    color: white;;
+    background-color: #11a399;
+}
+li{
+    padding: 0;
+    margin-left: 1;
+}
+
+.nav-list{
+    list-style-type: none;
+    font-size: x-large;
+}
+
+.logo{
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.item{
+    display: inline;
+    padding-left: 50px;
+}
+
+.nav{
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+.nav:hover{
+    color:  #1b1b1b;
+    background: #fff;
+}
+
+/* Styling container's */
+.about-me,.academic-qualification,.technical-qualification,.footer{
+    padding: 80px 0 0 0;
+}
+
+/* Styling content inside container's */
+
+.introduction,.about-me,.academic,.technical{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+}
+
+.last-part{
+    padding: 30px;
+}
+
+
+
+/* Styling Text */
+.text,.text1,.text2{
+    padding: 50px 20px 0 20px;
+    text-align: center;
+    justify-content: center;
+    line-height: 30px;
+    font-size: 17px;
+    font-family: 'Hahmlet', serif;
+}
+.text{
+    font-family: 'Dancing Script';
+    font-size: 25px;
+}
+
+
+/* Styling images */
+.suraj{
+    width: 180px;
+}
+
+.scrool-icon{
+    width: 140px;
+}
+
+.moving-icon{
+    width: 200px;
+}
+
+
+/* Styling <a> tag */
+
+.bottom-link{
+    text-decoration: none;
+}
+
+.bottom-link:hover{
+    color: tomato;
+    transition: ease-in-out 3;
+}
+
+
+/* Media Querie's For giving Responsive touch to our website */
+
+
+/*******Our website is looking very good for large laptop , Normal Laptop and Tablet we have to do some mdification for large medium and small mobile phone's ********/
+
+/* Very First Media Query for the navigation bar*/
+
+@media (max-width: 770px) {
+    .nav{
+        display: none;
+    }
+}
+
+
+
+/* Media Quary for contant and images of our website */
+
+@media (max-width: 768px) and (min-width: 425px){
+
+    /**Firstly We will change the width of images of our website so form 768px our  website's behaviour is changing in unfair manner so to handel this we will use media query**/
+    
+    /**Changing the width of our Images**/
+    .suraj{
+        width: 140px;
+    }
+    .scrool-icon{
+        width: 100px;
+    }
+    .moving-icon{
+        width: 160px;
+    }
+
+
+    .text{
+        padding: 30px 10px 0 10px;
+        font-size: 22px;
+    }
+    .text1,.text2{
+        padding: 30px 10px 0 10px;
+        font-size: 14px;
+    }
+
+
+    .about-me,.footer,.academic-qualification,.technical-qualification{
+        padding-top: 40px;
+    }
+
+}
+
+
+@media (max-width: 425px) and (min-width: 375px){
+    
+    /**Changing Width of Images**/
+    .suraj{
+        width: 100px;
+    }
+    .scrool-icon{
+        width: 60px;
+    }
+    .moving-icon{
+        width: 120px;
+    }
+    
+    /**Changing the Padding and font size of text**/
+    .text{
+        padding: 10px 10px 0 10px;
+        font-size: 19px;
+    }
+    .text1,.text2{
+        padding: 30px 10px 0 10px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    .about-me,.footer,.academic-qualification,.technical-qualification{
+        padding-top: 20px;
+    }
+
+    .last-part{
+        padding-top: 15px;
+        font-size: 9px;
+    }
+
+    a{
+        font-size: 9px;
+    }
+    .footer{
+        margin-top: 30px;
+    }
+
+    .logo{
+        font-size: x-large;
+    }
+}
+
+
+@media (max-width: 375px){
+    /**Changing Width of Images**/
+    .suraj{
+        width: 85px;
+    }
+    .scrool-icon{
+        width: 60px;
+    }
+    .moving-icon{
+        width: 80px;
+    }
+    
+    /**Changing the Padding and font size of text**/
+    .text{
+        padding: 5px 10px 0 10px;
+        font-size: 16px;
+    }
+    .text1,.text2{
+        padding: 10px 10px 0 10px;
+        font-size: 8px;
+        line-height: 15px;
+    }
+
+
+    .about-me,.footer,.academic-qualification,.technical-qualification{
+        padding-top: 10px;
+    }
+
+    .navigation-bar{
+        padding: 10px;
+    }
+
+    .last-part{
+        padding: 10px;
+        font-size: 9px;
+    }
+
+    .bottom-link{
+        font-size: 9px;
+    }
+
+    .footer{
+        margin-top: 20px;
+    }
+
+    .logo{
+        font-size: large;
+    }
+}
