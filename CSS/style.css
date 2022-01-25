@@ -271,4 +271,7 @@ li{
     .logo{
         font-size: large;
     }
+    .item{
+        display: none;
+    }
 }
